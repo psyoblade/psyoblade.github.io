@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "open location’ 메시지를 인식하지 못합니다. (-1708)"
+title:  "‘ open location’ 메시지를 인식하지 못합니다. (-1708)"
 date:   2017-07-21 23:15:22 +0900
 categories: psyoblade update
 ---
