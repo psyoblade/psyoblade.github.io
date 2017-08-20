@@ -18,8 +18,10 @@ pip install requirements.txt
 ```bash
 git clone https://github.com/openai/gym.git
 cd gym
-brew install zlib
-brew install swig
+
+brew install zlib cmake boost boost-python sdl2 swig wget
+pip install -e '.[all]'
+
 export MACOSX_DEPLOYMENT_TARGET=10.12
 pip install -e '.[all]'
 ...
