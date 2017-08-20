@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  완벽한 공부법 - "기억: 기억력은 타고나는 것이 아니다."
+title:  "완벽한 공부법 - '기억: 기억력은 타고나는 것이 아니다.'"
 date:   2017-08-20 21:15:22 +0900
 categories: psyoblade update
 ---
