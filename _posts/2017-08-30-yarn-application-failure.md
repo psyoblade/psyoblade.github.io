@@ -13,7 +13,7 @@ categories: psyoblade update
 ## [Failures in YARN](http://sungsoo.github.io/2014/04/07/failures-in-yarn.html)
 > YARN 환경에서 *task, application master, node manager and resource manager* 등의 다양한 컴포넌트 장애 상황에서 YARN은 어떻게 동작하는지 살펴보겠습니다.
 
-### 1. task 실패
+### 1. Task 실패
 > Failure of the running task is similar to the classic case. Runtime exceptions and sudden exits of the JVM are propagated back to the application master and the task attempt is marked as failed.
 * 실행 중인 작업의 실패는 고전적인 케이스이며, 대부분 런타임 오류나 JVM의 예기치 않은 종료인데 이 경우 aplication master로 전달되고, 실패로 마킹됩니다. 
 
@@ -24,7 +24,7 @@ categories: psyoblade update
 * 하둡 설정파일에 의해 이러한 고전적인 실패의 4회 시도가 감지되면, mapreduce.{map|reduce}.failures.maxpercent 비율을 넘는 경우 job 실패로 간주하고 종료됩니다.
 
 
-### 2. application master 실패
+### 2. Application Master 실패
 > Just like MapReduce tasks are given several attempts to succeed (in the face of hardware or network failures) applications in YARN are tried multiple times in the event of failure. By default, applications are marked as failed if they fail once, but this can be increased by setting the property yarn.resourcemanager.am.max-retries.
 * MapReduce 작업들과 같이 몇 번 재시도 하는 것 처럼, YARN의 application들도 task가 실패하는 경우 수차례 재시도 할 수 있습니다만, 기본값은 한 번 실패시에 실패로 간주됩니다. 다만, yarn.resourcemanager.am.max-retries 값으로 변경할 수 있습니다.
 
@@ -35,7 +35,7 @@ categories: psyoblade update
 * 클라이언트는 application master에 현재 상태를 확인하기 위해 계속 폴링하게 되는데, application master 실패 시에는 클라이언트는 새로운 인스턴스를 찾아야만합니다. job 초기 화시에 client는 resource manager에 application master 의 address를 물어보고 캐싱하게 되는데, application master 실패 시에 timeout이 발생하고, 상태를 업데이트 한 후 resource manager에 다시 주소를 물어 새로운 application master의 주소를 알아낼 수 있습니다.
 
 
-### node manager 실패
+### 3. Node Manager 실패
 > If a node manager fails, then it will stop sending heartbeats to the resource manager, and the node manager will be removed from the resource manager’s pool of available nodes. The property yarn.resourcemanager.nm.liveness-monitor.expiry-intervalms, which defaults to 600000 (10 minutes), determines the minimum time the resource manager waits before considering a node manager that has sent no heartbeat in that time as failed.
 * node manager 실패 시에 resource manager로 전송되는 핫빗이 멈추게되고, node manager는 resource manager의 pool로부터 분리되게 됩니다. yarn.resourcemanager.nm.liveness-monitor.expiry-intervalms 값으로 설정되고 기본값은 10분(600000)입니다. 이 값이 resource manager가 node manager가 살아있다는 핫빗을 기다리는 최대 시간입니다.
 
@@ -45,7 +45,7 @@ categories: psyoblade update
 > Node managers may be blacklisted if the number of failures for the application is high. Blacklisting is done by the application master, and for MapReduce the application master will try to reschedule tasks on different nodes if more than three tasks fail on a node manager. The threshold may be set with mapreduce.job.maxtaskfailures.per.tracker.
 * node managers 는 application이 많이 실패한 노드를 블랙리스트를 관리하고 있으며, application master에 의해 블랙리스트는 결정됩니다. 그리고 MapReduce application master는 회 이상 task실패가 있었던 node manager의 경우는 다른 노드를 찾도록 스케줄링을 조절합니다. 이 임계치는 mapreduce.job.maxtaskfaiures.per.tracker 에 의해 조정됩니다.
 
-### resource manager 실패
+### 4. Resource Manager 실패
 > Failure of the resource manager is serious, since without it neither jobs nor task containers can be launched. The resource manager was designed from the outset to be able to recover from crashes, by using a checkpointing mechanism to save its state to persistent storage, although at the time of writing the latest release did not have a complete implementation.
 * resouce manager의 실패는 어떠한 job, task, container도 실행할 수 업식 때문에 가장 심각한 문제입니다.  resource manager의 경우 외부 persistent storage에 checkpoint를 저장하는 매커니즘으로 crash로부터 복구가 가능하도록 설계되어 있습니다. 이 글을 작성하는 최근 릴리스에는 완전한 구현은 되어 있지 않습니다. (이 글을 작성하는 시점은 2014년이고, 현재 hadoop 2.7.3 버전은 이러한 문제가 모두 해결 되었습니다.)
 
