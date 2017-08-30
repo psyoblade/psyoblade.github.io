@@ -15,19 +15,21 @@ categories: psyoblade update
 
 ### 1. Task 실패
 > Failure of the running task is similar to the classic case. Runtime exceptions and sudden exits of the JVM are propagated back to the application master and the task attempt is marked as failed.
+
 * 실행 중인 작업의 실패는 고전적인 케이스이며, 대부분 런타임 오류나 JVM의 예기치 않은 종료인데 이 경우 aplication master로 전달되고, 실패로 마킹됩니다. 
 
 > Likewise, hanging tasks are noticed by the application master by the absence of a ping over the umbilical channel (the timeout is set by mapreduce.task.timeout), and again the task attempt is marked as failed. 
+
 * 행에 걸린 작업들은 application master의 umbilical channel을 통해 ping이 없는 경우 인지되는데 (mapreduce.task.timeout), 이 또한 실패로 마킹됩니다.
 
 > The configuration properties for determining when a task is considered to be failed are the same as the classic case: a task is marked as failed after four attempts (set by mapreduce.map.maxattempts for map tasks and mapreduce.reduce.maxattempts for reducer tasks). A job will be failed if more than mapreduce.map.failures.maxpercent percent of the map tasks in the job fail, or more than mapreduce.reduce.failures.maxpercent percent of the reduce tasks fail.
+
 * 하둡 설정파일에 의해 이러한 고전적인 실패의 4회 시도가 감지되면, mapreduce.{map|reduce}.failures.maxpercent 비율을 넘는 경우 job 실패로 간주하고 종료됩니다.
 
 
 ### 2. Application Master 실패
 > Just like MapReduce tasks are given several attempts to succeed (in the face of hardware or network failures) applications in YARN are tried multiple times in the event of failure. By default, applications are marked as failed if they fail once, but this can be increased by setting the property yarn.resourcemanager.am.max-retries.
 * MapReduce 작업들과 같이 몇 번 재시도 하는 것 처럼, YARN의 application들도 task가 실패하는 경우 수차례 재시도 할 수 있습니다만, 기본값은 한 번 실패시에 실패로 간주됩니다. 다만, yarn.resourcemanager.am.max-retries 값으로 변경할 수 있습니다.
-
 > An application master sends periodic heartbeats to the resource manager, and in the event of application master failure, the resource manager will detect the failure and start a new instance of the master running in a new container (managed by a node manager). In the case of the MapReduce application master, it can recover the state of the tasks that had already been run by the (failed) application so they don’t have to be rerun. By default, recovery is not enabled, so failed application masters will not rerun all their tasks, but you can turn it on by setting yarn.app.mapreduce.am.job.recovery.enable to true.
 * application master는 주기적으로 resource manager에 핫빗을 날리고, application master 실패가 인지됩니다. resource manager는 실패를 인지하면 새로운 container에 새로운 application master 인스턴스를 띄우게 됩니다. MapReduce application master의 경우 이전 작업들의 상태를 복구할 수 있지만, 굳이 다시 실행할 필요가 없기 때문에 복구의 기본값은 disabled 되어 있습니다. yarn.app.mapreduce.am.job.recovery.enable 값을 true 변경하면 됩니다. 
 
