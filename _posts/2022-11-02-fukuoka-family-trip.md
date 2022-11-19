@@ -19,17 +19,45 @@ categories: psyoblade created
 
 * 여권 확인 및 사전 등록
 
+### 아고다 숙소
+
+* [아고다](https://www.agoda.com/) 
+  * [프린스 스마트 인 하카타 ](https://www.agoda.com/ko-kr/ko-kr/prince-smart-inn-hakata/hotel/fukuoka-jp.html) - 결제 완료
+  * [유후인 바스 - 사토야마 사푸](https://www.satoyamasafu.com/) - 현장 결제
+  * [더 브렉퍼스트 호텔 후쿠오카 텐진](https://www.agoda.com/ko-kr/ko-kr/hotel-wbf-fukuoka-tenjin-minami/hotel/fukuoka-jp.html) - 현장 결제
+
 ### 11/19 (토)
 
 * 15:00 소원이 [PCR 검사](http://www.365openmd.com/) 
-* 17:00 시훈이 [가족관계 증명서](https://www.gov.kr/main?a=AA020InfoCappViewApp&CappBizCD=97400000004) 출력
-* 18:00 [티웨이 항공](https://www.twayair.com/app/main) 여권정보 입력, 수하물 추가 비용 확인, [노벨파킹센터](http://m.nobelparking.com/page/page21) 주차장 예약
-* 19:00 유후인 가는 고속버스 예약, 유후인에서 돌아오는 유후인 노모리 예약
-* 20:00 전체 이동 동선 확인 및 교통편 확인
-* 21:00 식당 및 맛집 확인
+* 16:00 시훈이 [정부 24](https://www.gov.kr/main?a=AA020InfoCappViewApp&CappBizCD=97400000004) 가족관계 증명서 출력
+* 17:00 [노벨파킹센터](http://m.nobelparking.com/page/page21) 주차장 예약
+* 18:00 [Visit Japan Web](https://www.vjw.digital.go.jp/main/#/vjwpco001) 등록
+  * [패스트트랙 가이드](https://www.hco.mhlw.go.jp/kr/)
+  * 항공기 탑승 72시간 이내의 PCR 음성 증명서 (백신 3차 미접종자만)
+  * 만 18세 미만 미성년자는 백신을 3차 이상 접종한 부모가 동행하는 경우에 한해 PCR 검사와 백신 접종 증명서를 모두 제출하지 않아도 됩니다
+* 19:00 숙소 확인
+  * 숙소 : [유후인 바스 - 사토야마 사푸](https://www.satoyamasafu.com/)
+  * 인원 : 男性2人、女性2人です。
+* 20:00 [티웨이 항공](https://www.twayair.com/app/main) 여권정보 입력
+  * 스마트 요금이라 수하물 15Kg 무료
+* 21:00 유후인 가는 고속버스 예약, 유후인에서 돌아오는 유후인 노모리 예약
+  * [JR 큐슈 여객철도](https://www.jrkyushu.co.jp/) 가입
+  * [카타카타 변환기](https://enjoyjapan.co.kr/hangul_name_to_japanese_katakana_converter.php)
+    * 朴 隋革 (パク スヒョク)
+  * [도로명 / 영문주소 변환](https://www.juso.go.kr/openIndexPage.do)
+  * [유후인 노모리 예약](https://iliketrip.net/3917)
+    * 유후인 숙소 879-5103
+* 22:00 환전 및 와이파이
+  * 엔화 환전 금액 ([하나은행 인천공항점](https://goo.gl/maps/X1we4E9YbMD4BTLZA))
+  * 와이파이 도시락 - 인천공항 제1여객터미널 1층 7번 출구 옆
+  * 시내 교통
+* 23:00 전체 이동 동선 확인 및 교통편 확인
+  * 
 
 ### 11/20 (일)
 
+* 08:00 식당 및 맛집 확인
+  * 맛집
 * 12:00 소원이 PCR 영문 음성 결과지 수령
 * 20:00 항공권 체크인
 
@@ -46,22 +74,26 @@ categories: psyoblade created
 
 ### 11/22 (화)
 
-* 9시 체크아웃 - 
-* 13시 유후인 도착 - 갈 때는 고속 버스 (장소, 가격 및 예약 가능 여부 확인)
-* 14시 체크인 - [유후인 배스 사토야마사푸](https://www.agoda.com/ko-kr/ko-kr/yufuin-bath-satoyamasafu/hotel/yufu-jp.html)
+* 09:00 체크아웃
+* 10:00 하카타 역으로 이동, 미도리의 창구 ([みどりの窓口](https://goo.gl/maps/1pECu8BvptkVgysu6))에서 기차표 왕복 모두 발권
+* 12:13 하카타(博多) 출발 - [특급 유후 3호](https://train.yoyaku.jrkyushu.co.jp/), 일본어 사이트에서 예약해야 좌석 지정 무료
+* 14:39 유후인(由布院) 도착
+* **15:00 체크인** - [유후인 배스 사토야마사푸](https://www.agoda.com/ko-kr/ko-kr/yufuin-bath-satoyamasafu/hotel/yufu-jp.html)
   * [사토야마 사푸](https://www.satoyamasafu.com/en/spa/index.html)
+  * 픽업을 원하시는 분은 오후 3시~6시 사이에 유후인역에서 전화 (+81977765755) 주시면 픽업해 드립니다
 
+* **18:00 입실마감**
 
 ### 11/23 (수)
 
-* 10시 체크아웃 - 올 때는 [유후인 노모리 기차](https://iliketrip.net/3917) (미리 온라인 예약하면 더 싸다고 함)
-  * 13:00 ~ 유후인 노모리 기차를 몇 시에 타야하나?
-
-* 13시 텐진 도착
-* 14시 호텔 도착 - [더 브렉퍼스트 호텔 후쿠오카 텐진](https://www.agoda.com/ko-kr/ko-kr/hotel-wbf-fukuoka-tenjin-minami/hotel/fukuoka-jp.html)
+* **10:00 체크아웃**  및 주 및 주변 구경
+* 11:00 역으로 이동 및 대기
+* 12:01  [유후인 노모리 기차](https://iliketrip.net/3917) ([特急ゆふいんの森２号](https://train.yoyaku.jrkyushu.co.jp/))
+* 14:19 하카타 도착 (由布院 > 博多)
+* 15:00 텐진 이동
+* 15:30 호텔 도착 - [더 브렉퍼스트 호텔 후쿠오카 텐진](https://www.agoda.com/ko-kr/ko-kr/hotel-wbf-fukuoka-tenjin-minami/hotel/fukuoka-jp.html)
 * 먹거리
   * 텐진 이나치카
-
 * 관광
   * 건담
 
