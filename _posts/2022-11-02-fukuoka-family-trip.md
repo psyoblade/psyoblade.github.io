@@ -35,6 +35,7 @@ categories: psyoblade created
   * [패스트트랙 가이드](https://www.hco.mhlw.go.jp/kr/)
   * 항공기 탑승 72시간 이내의 PCR 음성 증명서 (백신 3차 미접종자만)
   * 만 18세 미만 미성년자는 백신을 3차 이상 접종한 부모가 동행하는 경우에 한해 PCR 검사와 백신 접종 증명서를 모두 제출하지 않아도 됩니다
+    * ![image-20221120181608818](images/image-20221120181608818.png)
 * 19:00 숙소 확인
   * 숙소 : [유후인 바스 - 사토야마 사푸](https://www.satoyamasafu.com/)
   * 인원 : 男性2人、女性2人です。
@@ -51,36 +52,46 @@ categories: psyoblade created
   * 엔화 환전 금액 ([하나은행 인천공항점](https://goo.gl/maps/X1we4E9YbMD4BTLZA))
   * 와이파이 도시락 - 인천공항 제1여객터미널 1층 7번 출구 옆
   * 시내 교통
-* 23:00 전체 이동 동선 확인 및 교통편 확인
-  * 
 
 ### 11/20 (일)
 
-* 08:00 식당 및 맛집 확인
-  * 맛집
 * 12:00 소원이 PCR 영문 음성 결과지 수령
-* 20:00 항공권 체크인
+  * 등록 및 확인
+* 17:00 각자 가방 확인
+  * [기내 수하물 반입 금지 품목](https://www.koreanair.com/kr/ko/airport/baggage/restricted-items/carry-on) 및 [기내 수하물로 가져가야만 하는 물품](https://brunch.co.kr/@hotelscomkr/460)
+    * 휴대용 보조배터리, 포켓와이파이 및 아이패드 등은 반드시 수하물로 가야가야 함
+    * 100ml 이하 액체류는 수하물로, 이상의 액체류는 위탁으로 보내야 함
+    * 4박 5일간 입을 내의, 양말 등
+    * 핸드폰 및 전자기기 충전기 등
+  * 위탁 수하물
+    * 
+* 18:00 식당 및 맛집 확인
+  * 맛집
+* 19:00 전체 이동 동선 확인 및 교통편 확인
 
 ### 11/21 (월)
 
-* 08:30 공항도착
-* 09:30 하나은행 인천공항지점 방문- 엔화통장개설+이체+인출, 수수료 5만원 예상
-* 10:30 [티웨이 터미널](https://www.twayair.com/app/serviceInfo/airportCounter?searchKeyword=&searchConti=JAP) F 카운터로 이동 
-* 11:30 체크인 면세점
-* 13:40 후쿠오카 출발
-* 15:00 입국심사 및 기타
+* 06:00 ~ 07:00 기상 및 식사
+* 07:00 ~ 08:30 노벨파킹센터 도착
+* 08:30 ~ 09:30 하나은행 인천공항지점 - 엔화통장 개설 + 이체 + 인출 수수료 2만원, 토스뱅크 엔화 인출
+* 09:30 ~ 10:30 [티웨이 터미널](https://www.twayair.com/app/serviceInfo/airportCounter?searchKeyword=&searchConti=JAP) F 카운터로 이동 - **10:40 현장 체크인만 가능하므로 10시 15분 부터 줄 설 것**
+* 10:30 ~ 13:30 커피 및 면세점 탐방
+* 13:40 ~ 15:00 후쿠오카 도착
+* 15:00 ~ 16:00 입국심사 및 기타
 * 16:00 호텔 도착 - [프린스 스마트 인 하카타](https://www.agoda.com/ko-kr/ko-kr/prince-smart-inn-hakata/hotel/fukuoka-jp.html)
-* 역 주변에서 밥먹고 놀기
+* 17:00 [키와미야 함바그](https://goo.gl/maps/SR3Ea68YiMZqKbWq9) 
 
 ### 11/22 (화)
 
 * 09:00 체크아웃
 * 10:00 하카타 역으로 이동, 미도리의 창구 ([みどりの窓口](https://goo.gl/maps/1pECu8BvptkVgysu6))에서 기차표 왕복 모두 발권
+  * 에끼벤 2개, 편의점 간식 2인분 구매
+
 * 12:13 하카타(博多) 출발 - [특급 유후 3호](https://train.yoyaku.jrkyushu.co.jp/), 일본어 사이트에서 예약해야 좌석 지정 무료
 * 14:39 유후인(由布院) 도착
-* **15:00 체크인** - [유후인 배스 사토야마사푸](https://www.agoda.com/ko-kr/ko-kr/yufuin-bath-satoyamasafu/hotel/yufu-jp.html)
+* **15:00 체크인** - [유후인 배스 사토야마사푸](https://goo.gl/maps/RzHyvgSxuKR33qhR8)
   * [사토야마 사푸](https://www.satoyamasafu.com/en/spa/index.html)
-  * 픽업을 원하시는 분은 오후 3시~6시 사이에 유후인역에서 전화 (+81977765755) 주시면 픽업해 드립니다
+  * 픽업을 원하시는 분은 오후 3시~6시 사이에 유후인역에서 전화 (+81977765755) 주시면 픽업해 드립니다 
 
 * **18:00 입실마감**
 
@@ -89,18 +100,21 @@ categories: psyoblade created
 * **10:00 체크아웃**  및 주 및 주변 구경
 * 11:00 역으로 이동 및 대기
 * 12:01  [유후인 노모리 기차](https://iliketrip.net/3917) ([特急ゆふいんの森２号](https://train.yoyaku.jrkyushu.co.jp/))
-* 14:19 하카타 도착 (由布院 > 博多)
+* 14:19 하카타 도착 (由布院 > 博多) 
+  - [일 포르노 델 미뇽 (빵집)](https://goo.gl/maps/LcdnLsWFqc3Ruj9B7)
+  - [시로야 (빵집)](https://goo.gl/maps/BMXyqujGBY4HfYR16) 
 * 15:00 텐진 이동
 * 15:30 호텔 도착 - [더 브렉퍼스트 호텔 후쿠오카 텐진](https://www.agoda.com/ko-kr/ko-kr/hotel-wbf-fukuoka-tenjin-minami/hotel/fukuoka-jp.html)
 * 먹거리
   * 텐진 이나치카
+  * [규카츠 모토무라](https://g.page/gyukatsu_fukuoka-tenjin?share) 텐진
 * 관광
   * 건담
-
 
 ### 11/24 (목)
 
 * 10시 나와서 텐만구 학문의 신을 볼 것
+* 
 
 ### 11/25 (금)
 
