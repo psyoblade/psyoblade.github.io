@@ -35,7 +35,7 @@ categories: psyoblade created
   * [패스트트랙 가이드](https://www.hco.mhlw.go.jp/kr/)
   * 항공기 탑승 72시간 이내의 PCR 음성 증명서 (백신 3차 미접종자만)
   * 만 18세 미만 미성년자는 백신을 3차 이상 접종한 부모가 동행하는 경우에 한해 PCR 검사와 백신 접종 증명서를 모두 제출하지 않아도 됩니다
-    * ![image-20221120181608818](images/image-20221120181608818.png)
+    * ![corona19](images/corona19.png)
 * 19:00 숙소 확인
   * 숙소 : [유후인 바스 - 사토야마 사푸](https://www.satoyamasafu.com/)
   * 인원 : 男性2人、女性2人です。
