@@ -35,7 +35,6 @@ categories: psyoblade created
   * [패스트트랙 가이드](https://www.hco.mhlw.go.jp/kr/)
   * 항공기 탑승 72시간 이내의 PCR 음성 증명서 (백신 3차 미접종자만)
   * 만 18세 미만 미성년자는 백신을 3차 이상 접종한 부모가 동행하는 경우에 한해 PCR 검사와 백신 접종 증명서를 모두 제출하지 않아도 됩니다
-    * ![corona19](images/corona19.png)
 * 19:00 숙소 확인
   * 숙소 : [유후인 바스 - 사토야마 사푸](https://www.satoyamasafu.com/)
   * 인원 : 男性2人、女性2人です。
@@ -78,7 +77,8 @@ categories: psyoblade created
 * 10:30 ~ 13:30 커피 및 면세점 탐방
 * 13:40 ~ 15:00 후쿠오카 도착
 * 15:00 ~ 16:00 입국심사 및 기타
-* 16:00 호텔 도착 - [프린스 스마트 인 하카타](https://www.agoda.com/ko-kr/ko-kr/prince-smart-inn-hakata/hotel/fukuoka-jp.html)
+* 16:00 후쿠오카 공항에서 [하카타 260엔](https://subway.city.fukuoka.lg.jp/kor/fare/one/)
+* 16:30 호텔 도착 - [프린스 스마트 인 하카타](https://www.agoda.com/ko-kr/ko-kr/prince-smart-inn-hakata/hotel/fukuoka-jp.html)
 * 17:00 [키와미야 함바그](https://goo.gl/maps/SR3Ea68YiMZqKbWq9) 
 
 ### 11/22 (화)
@@ -91,7 +91,7 @@ categories: psyoblade created
 * 14:39 유후인(由布院) 도착
 * **15:00 체크인** - [유후인 배스 사토야마사푸](https://goo.gl/maps/RzHyvgSxuKR33qhR8)
   * [사토야마 사푸](https://www.satoyamasafu.com/en/spa/index.html)
-  * 픽업을 원하시는 분은 오후 3시~6시 사이에 유후인역에서 전화 (+81977765755) 주시면 픽업해 드립니다 
+  * 픽업을 원하시는 분은 오후 3시~6시 사이에 유후인역에서 전화 (+81977765755) 주시면 픽업해 드립니다
 
 * **18:00 입실마감**
 
@@ -103,22 +103,23 @@ categories: psyoblade created
 * 14:19 하카타 도착 (由布院 > 博多) 
   - [일 포르노 델 미뇽 (빵집)](https://goo.gl/maps/LcdnLsWFqc3Ruj9B7)
   - [시로야 (빵집)](https://goo.gl/maps/BMXyqujGBY4HfYR16) 
-* 15:00 텐진 이동
+* 15:00 하카타 > 텐진 이동 150엔
 * 15:30 호텔 도착 - [더 브렉퍼스트 호텔 후쿠오카 텐진](https://www.agoda.com/ko-kr/ko-kr/hotel-wbf-fukuoka-tenjin-minami/hotel/fukuoka-jp.html)
 * 먹거리
   * 텐진 이나치카
   * [규카츠 모토무라](https://g.page/gyukatsu_fukuoka-tenjin?share) 텐진
-* 관광
-  * 건담
 
 ### 11/24 (목)
 
-* 10시 나와서 텐만구 학문의 신을 볼 것
-* 
+* 09:00 텐진 역으로 이동 
+  * [지하철 텐진역에서 오무타선 특급](https://librewiki.net/wiki/%ED%85%90%EC%A7%84%EC%98%A4%EB%AC%B4%ED%83%80%EC%84%A0)을 타고 후츠가이치역에서 환승을 해서 다자이후행을 타고 2정거장 - 편도 400엔
+  * 텐만구 학문의 신
+
+* 10:00 텐만구 도착
+* 14:00 구경 및 점심
+* 16:00 호텔 휴식 후 [돈키호테 텐진 본점](https://goo.gl/maps/HbsSHoTGta7UfMUPA)
 
 ### 11/25 (금)
 
-* 하카타 주변 호텔
-* 9시 주변 돌아다니면서 놀기 - 쇼핑 동키호테 + 캐널시티 하루 종일
-* 17시 돌아오는 길
-
+* 09:00 [캐널 시티 하카타](https://goo.gl/maps/8nhnBay68bjwwQ9t6) 구경 및 쇼핑
+* 14:00 식사
