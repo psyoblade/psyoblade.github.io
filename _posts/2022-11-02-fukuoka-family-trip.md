@@ -124,7 +124,7 @@ categories: psyoblade created
 * 09:00 [캐널 시티 하카타](https://goo.gl/maps/8nhnBay68bjwwQ9t6) 구경 및 쇼핑
 * 14:00 식사
 
-![후쿠오카 2022](https://github.com/psyoblade/psyoblade.github.io/blob/master/images/fukuoka.jpeg)
+![후쿠오카 2022](https://user-images.githubusercontent.com/604173/204074458-298f21c5-dd29-43e0-ba53-80cdabeb2f7d.png)
 
 ## 여행 후기
 
