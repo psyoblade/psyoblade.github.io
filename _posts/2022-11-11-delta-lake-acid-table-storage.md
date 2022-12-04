@@ -27,9 +27,13 @@ categories: psyoblade created
 >
 >  이러한 문제점을 해소하기 위해 파케이 포맷으로 인코딩된 write-ahead 로그 방식을 통해 ACID 속성을 지원하는 델타 테이블을 설계하여 클라이언트는 다수의 객체들을 한 번에 업데이트 할 수 있습니다.
 
-
-
-
+* Time travel
+* UPSERT, DELETE and MERGE operations
+* Efficient streaming I/O
+* Caching
+* Data layout optimization
+* Schema evolution
+* Audit logging
 
 ### 2. 특징 및 도전과제
 
