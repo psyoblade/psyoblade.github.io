@@ -27,17 +27,28 @@ categories: psyoblade created
 >
 >  이러한 문제점을 해소하기 위해 파케이 포맷으로 인코딩된 write-ahead 로그 방식을 통해 ACID 속성을 지원하는 델타 테이블을 설계하여 클라이언트는 다수의 객체들을 한 번에 업데이트 할 수 있습니다.
 
-* Time travel
-* UPSERT, DELETE and MERGE operations
-* Efficient streaming I/O
-* Caching
-* Data layout optimization
-* Schema evolution
-* Audit logging
+* Time travel : 특정 시점 스냅샷 질의 혹은 롤백
+* UPSERT, DELETE and MERGE operations : 객체의 효율적인 고쳐쓰기
+* Efficient streaming I/O : 낮은 레이턴시로 작은 객체를 테이블에 저장하면서, 추후 성능을 고려하여 트랜잭션을 지원하는 큰 객체로 병합이 가능하며, 추가되는 객체에 대한 테일링을 지원하여 메시지 버스로 활용 가능
+* Caching : 델타 테이블의 테이블과 객체는 불변이므로, 클러스터 노드는 안전하게 로컬 디스크를 통한 캐시가 가능
+* Data layout optimization : 테이블 객체의 크기를 자동 최적화 지원하여 특정 디멘젼에 지역성(locality)을 확보할 수 있는 Z오더에 따른 저장이 가능
+* Schema evolution : 테이블 스키마가 변경되더라도 다시 쓰지 않고도 오래된 파케이 파일들을 읽기
+* Audit logging : 트랜잭션 로그 기반의 감사 로깅
+
+![Figure 1: A data pipeline implemented using three storage systems or using Delta Lake for both stream and table storage.](https://user-images.githubusercontent.com/604173/205642859-a51862e9-8f93-432b-9559-2ae4e72795e6.png)
+
+>  3가지의 서로 다른 저장 시스템(a message queue, object store and data warehouse)들을 통한 파이프라인 구성 대비 스트림 및 테이블 저장소 양쪽을 지원하는 델타 레이크를 비교합니다. 델타 레이크를 통해 데이터의 중복 관리를 하지 않아도 되며, 저비용의 객체 저장소를 운영할 수 있습니다.
+>
+>  이러한 기능을 통해 기존 데이터 웨어하우스 뿐만 아니라 데이터 레이크의 특징을 통합한 "레이크 하우스" 패러다임을 가능하게하며, 관리 뿐만 아니라 성능 문제도 해소할 수 있습니다.
 
 ### 2. 특징 및 도전과제
 
+>  클라우드 기반의 객체 저장소의 API 의 성능 관점에서의 특징과, 효율적인 테이블 관리의 애로 사항을 설명하고 테이블 형태의 데이터 집합에 대해 어떻게 관리하는 지에 대한 설명을 합니다
+
 #### 2-1. 객체 저장소
+
+* 키-값 저장소는 개별 객체는 키에 의해 구분됩니다
+* 
 
 #### 2-2. 일관성
 
