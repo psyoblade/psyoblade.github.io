@@ -35,7 +35,7 @@ categories: psyoblade created
 * Schema evolution : 테이블 스키마가 변경되더라도 다시 쓰지 않고도 오래된 파케이 파일들을 읽기
 * Audit logging : 트랜잭션 로그 기반의 감사 로깅
 
-![Figure 1: A data pipeline implemented using three storage systems or using Delta Lake for both stream and table storage.](https://user-images.githubusercontent.com/604173/205642859-a51862e9-8f93-432b-9559-2ae4e72795e6.png)
+<img width="477" alt="delta-lake-fig-1" src="https://user-images.githubusercontent.com/604173/206891414-21c6b79a-5d19-4d09-a8db-bb9445d9f2bd.png">
 
 >  3가지의 서로 다른 저장 시스템(a message queue, object store and data warehouse)들을 통한 파이프라인 구성 대비 스트림 및 테이블 저장소 양쪽을 지원하는 델타 레이크를 비교합니다. 델타 레이크를 통해 데이터의 중복 관리를 하지 않아도 되며, 저비용의 객체 저장소를 운영할 수 있습니다.
 >
@@ -273,26 +273,61 @@ categories: psyoblade created
 * 테이블 로그가 데이터 생산자, 소비자 모두 테이블을 메시지 대기열로 처리할 수 있도록 델타 레이크를 설계했습니다
   * 크게 아래의 3가지 요소가 테이블을 통한 스트리밍 데이터 입수가 가능합니다
 * **Write Compaction** 
+  * 빠른 쓰기에 유리한 작은 데이터 생성과, 읽기에 최적화된 큰 데이터 모두를 만족하는 매커니즘을 제공합니다
   * 작은 객체를 단순히 쓰기만 하면 쉽게 저장은 가능하지만, 쿼리 성능에 큰 영향을 줄 수 있습니다.
   * 수많은 파일을 읽어야 하고, 그에 따른 메타데이터 조회 시간 또한 느려질 수 있습니다
+    * 작은 데이터 객체를 트랜잭션 방식으로 압축하는 백그라운드 프로세스를 통해 최적화 합니다
   * 스트리밍 컨슈머가 순차적인 로그를 이미 읽은 경우, 압축된 로그 레코드들의 *dataChange false* 설정으로 회피
   * 스트리밍 애플리케이션은 오래된 데이터에 대한 쿼리가 빠르게 유지되는 동안 작은 객체를 통해 빠른 전송이 가능
     * 스트리밍 애플리케이션이 기동되는 동안에는 읽기는 수시로 읽기 때문에 작은 데이터 읽어도 문제 없음
 * **Exactly-Once Streaming Writes**
-  * 저장 실패시에 중복된 저장을 방지하기 위해서 멱등하게 동작하는 매커니즘이 필요합니다.
+  * 저장 실패시에 중복된 저장을 방지하기 위해서 멱등하게 동작하는 매커니즘을 제공합니다
   * 하나, 데이터베이스에서 취하는 접근이며, 각 레코드의 고유키가 있는지 확인하는 방법
   * 둘, 보다 일반적인 접근은 각 쓰기와 함께 "마지막으로 작성된 버전의" 레코드를 원자적으로 업데이트하여 새로운 변경 사항을 쓰는 데에만 사용할 수 있도록 하는 방법이 있습니다.
     * 결국 파일을 쓰기 위해서는 델타의 상태를 읽어 들여야 하고, 이 때에 마지막으로 저장한 정보를 확인할 수 있음
   * 델타 레이크는 애플리케이션이 각 트랜잭션과 함께 `appId, version` 쌍을 업데이트 할 수 있도록 하여 두 번째 패턴을 지원할 수 있습니다
     * *Spark Stuructured Streaming* 의 경우 커넥터에서 이러한 기능을 통해 *append, aggregation, upsert* 를 지원
 * **Efficient Log Tailing**
-  * 
+  * 소비자가 새로운 쓰기를 효율적으로 찾을 수 있는 매커니즘을 제공합니다
+  * 사전 순으로 증가하는 ID를 포함한 *.json* 로그 저장 형식, 새로운 항목은 항상 마지막 레코드 ID로 생성
+  * *dataChange* 플래그를 통해 스트리밍 컨슈머는 데이터 압축, 재정렬 등의 레코드를 건너띌 수 있음
+  * 스트리밍 애플리케이션 실행 시에 마지막 레코드 ID 기억만으로 델타 레이크 테이블의 동일한 레코드에서 재시작 가능
 
 ### 4-4. 데이터 레이아웃 및 최적화
 
+>  분석 쿼리 특성상 어떤 쿼리가 수행될지 판단하기 어렵기 때문에 데이터 레이아웃은 쿼리의 성능에 아주 큰 영향을 미칩니다. 예를 들어 백그라운드 프로세스는 다른 클라이언트에 영향을 주지 않고 데이터 압축 및 레코드 순서 변경 및 통계, 인덱스 같은 보조 데이터 구조를 갱신할 수 있습니다.
+
+#### `OPTIMIZE` 커맨드
+
+>  사용자는 진행 중인 트랜잭션에 영향을 주지 않고 객체를 압축하는 `OPTIMIZE` 명령을 수행할 수 있고, 누락된 통계 계산을 수동으로 할 수도 있습니다. 기본적으로 데이터 객체의 크기를 1GB로 만드는 것을 목표로 하며, 이 값은 사용자가 지정할 수 있습니다.
+
+#### 다양한 속성에 의한 `Z-Ordering`
+
+>  많은 데이터 집합은 여러 속성과 함께 매우 선택적인 쿼리를 수신하게 되는데, 네트워크에 전송된 데이터에 대한 저장정보(*sourceIp, destIp, time*)를 튜플로 하는 데이터 집합은 여러 차원에 따라 선택적인 쿼리를 수행할 수 있습니다.
+>
+>  *Apache Hive* 경우 속성 값이 충분히 크지 않다면 파티셔닝 기법을 통해 해결할 수 있지만, 속성의 값의 *cardinality* 가 충분히 큰 경우에는 파티션 수가 너무 커져서 오히려 문제가 될 수 있습니다. 결국 많은 *dimension* 에 대한 높은 *locality* 를 보장하기 위해서는 주어진 속성 집합을 따라 *Z-Order* 의 순서대로 레코드를 재구성할 수 있습니다. *Z-Order* 곡선은 지정된 모든 차원에서 지역성을 유지하면서 순서를 유지하면서 생성되는 곡선입니다.
+>
+>  이용자가 이러한 *Z-order* 를 직접 지정하여 `OPTIMIZE` 명령 수행이 가능하며, 데이터 통계와 같이 동작하기 때문에 쿼리 수행 시에 작은 데이터를 읽어들이는 경우, 효과적인 데이터 건너뛰기가 가능합니다.
+
+#### `AUTO OPTIMIZE` 
+
+>  데이터 브릭스 클라우드 서비스에서는 이 속성을 통해 데이터 객체를 자동으로 압축할 수 있으며, 테이블을 업데이트 할때 인덱스 또한 계산 비용이 많이 드는 통계정보를 유지관리할 수 있습니다
+
 ### 4-5. 캐싱
 
+>   많은 클라우드 사용자는 임시 쿼리 워크로드를 위해 상대적으로 수명이 긴 클러스터를 실행하여 워크로드에 따라 클러스터를 자동으로 확장 및 축소할 수 있습니다. 이러한 클러스터에는 객체 저장소 데이터를 로컬 장치에 캐싱하여 가속화할 수 있는데 *AWS i3 인스턴스는* *237GB 의 NVMe SSD* 저장소를 제공합니다.
+>
+>  데이터브릭스에서는 데이터 및 로그 객체를 캐싱하여 테이블 수준에서 데이터 및 메타데이터 쿼리를 가속화하는 클러스터의 데이터 레이크 데이터를 투명하게 캐싱하는 기능을 제공합니다. 델타 레이크 테이블의 체크포인트 데이터 객체는 *immutable* 이므로 캐싱에 안전합니다.
+
 ### 4-6. 오딧
+
+>  데이터 레이크 트랜잭션 로그는 *commitInfo* 레코드를 기반으로 하는 감사 로깅에 사용할 수 있습니다. 데이터브릭스에서 사용자 정의함수가 클라우드 스토리지에 직접 액세스 할 수 없는 *locked-down execution mode* 를 제공합니다. 
+>
+>  이를 통해 런타임 엔진만 *commitInfo* 레코드를 쓸 수 있도록 하여, 임의로 해당 정보를 변경하거나 수정할 수 없어서 변경 불가능한 감사 로그를 보장합니다.
+
+<img width="477" alt="delta-lake-fig-3" src="https://user-images.githubusercontent.com/604173/206907974-57ecf975-3d8a-4136-bf47-b4ec98e61220.png">
+
+> Figure 3: 데이터브릭스 델타 레이크 테이블의 `DESCRIBE HISTORY` 명령을 통한 실행 이력 출력 결과.
 
 ### 4-7. 스키마
 
@@ -364,7 +399,43 @@ Attempt to write the transaction’s log record into the r + 1 .json log object,
 >
 > [다중 버전 동시성 제어](https://mangkyu.tistory.com/53) 
 
+#### Q10. `Z-Order` 혹은 `Z-Order curve` 가 무엇인가요?
 
+> <kbd>답변</kbd> : 동일한 파일집합에 관련된 정보를 같이 배치하는 기술입니다. 이 *co-locality* 는 델타 레이크에서 자동으로 적용되어 *data-skipping* 알고리즘으로 활용되어 데이터 읽기에 아주 효과적이며, 데이터를 *Z-order* 순서대로 정렬하기 위해서  `ZORDER BY` 절에 해당 컬럼을 명시할 수 있습니다 
+>
+> ```sql
+> OPTIMIZE events
+> WHERE date >= current_timestamp() - INTERVAL 1 day
+> ZORDER BY (eventType)
+> ```
+>
+>  자주 쿼리에 사용되는 컬럼이 `eventType` 이고 해당 컬럼의 *cardinality* 가 아주 높은 경우에 효과적으로 사용될 수 있으며, 콤마 구분자를 활용하여 여러 컬럼을 추가할 수 있으나, *locality* 효율이 떨어질 수 있습니다. 반드시 수집된 통계가 있는 열에 대해 지정해야 하며 이는 데이터 건너뛰기에 *min, max, count* 등의 로컬 통계를 활용하기 때문입니다.
+>
+>  기본적으로 Databricks의 Delta Lake는 테이블 스키마에 정의된 처음 32개 열에 대한 통계를 수집합니다. [테이블 속성을](https://docs.databricks.com/delta/table-properties.html) 사용하여 이 값을 변경할 수 있습니다 `delta.dataSkippingNumIndexedCols`. 통계를 수집하기 위해 더 많은 열을 추가하면 파일을 작성할 때 더 많은 오버헤드가 추가됩니다.
+>
+>  긴 문자열에 대한 통계 수집은 비용이 많이 드는 작업입니다. 긴 문자열에 대한 통계 수집을 방지하려면 긴 문자열이 포함된 열을 피하도록 테이블 속성을 구성하거나 긴 문자열이 포함된 열을 사용하는 것 `delta.dataSkippingNumIndexedCols`보다 큰 열로 이동할 수 있습니다 .
+>
+> <img width="477" alt="z-order-curve" src="https://user-images.githubusercontent.com/604173/206906198-466a8da0-fff4-4411-9ea3-41f7cd42e16a.png">
+>
+>  `Z-Order curve` 란 데이터 포인트의 지역성을 유지하면서 [다차원 데이터를 1차원으로](https://en.wikipedia.org/wiki/Space-filling_curve) 매핑하는 기술을 말합니다.
+>
+> <img width="477" alt="z-order-curve" src="https://user-images.githubusercontent.com/604173/206906357-1e9d6a0d-3e80-4e7e-824f-3af5fac6b1bf.png">
+>
+> <kbd>참고</kbd> : [Z-Order 인덱스로 데이터 건너뛰기](https://docs.databricks.com/delta/data-skipping.html), [Z-Order 커브](https://en.wikipedia.org/wiki/Z-order_curve)
+
+#### Q11. `AUTO OPTIMIZE` 기능은 데이터브릭스 클라우드 서비스에서만 사용가능한가요?
+
+> <kbd>답변</kbd> : 
+
+#### Q12. `SATA SSD` 와 `NVMe SSD` 의 차이점?
+
+> <kbd>답변</kbd> : 
+>
+> [M.2 SSD의 2가지 유형: SATA 및 NVMe](https://www.kingston.com/kr/blog/pc-performance/two-types-m2-vs-ssd0)
+
+#### Q13. *locked-down execution mode* 방식이 *HDFS* 상에서도 적용이 가능한가?
+
+> <kbd>답변</kbd> : 
 
 
 
