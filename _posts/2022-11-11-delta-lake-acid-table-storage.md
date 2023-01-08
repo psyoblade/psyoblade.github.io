@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "델타 레이크: 고성능 ACID 테이블 저장소"
-date:   2020-11-11 08:00:00 +0900
+date:   2022-11-11 08:00:00 +0900
 categories: psyoblade created
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "레이크하우스: 차세대 데이터 웨어하우스 플랫폼"
-date:   2020-11-14 07:02:00 +0900
+date:   2022-11-14 07:02:00 +0900
 categories: psyoblade created
 ---
 
