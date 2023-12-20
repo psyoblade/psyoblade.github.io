@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "리뷰: 용과 같이 8"
-date:   2023-12-31 00:00:00 +0900
+date:   2023-12-11 08:00:00 +0900
 categories: psyoblade created
 ---
 

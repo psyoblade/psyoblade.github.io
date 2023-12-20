@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "소개: 라스트 오브 어스 파트2"
-date:   2023-12-31 00:00:00 +0900
+date:   2023-12-05 08:00:00 +0900
 categories: psyoblade created
 
 

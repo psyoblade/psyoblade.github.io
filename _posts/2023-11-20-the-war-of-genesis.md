@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "게임: 창세기전 체험판"
-date:   2023-11-19 00:00:00 +0900
+date:   2023-11-20 08:00:00 +0900
 categories: psyoblade created
 
 
