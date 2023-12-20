@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "분류: 제목"
+title:  "학습: IRP란 무엇인가?"
 date:   2023-12-31 00:00:00 +0900
 categories: psyoblade created
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "분류: 제목"
+title:  "학습: 스토리보드 작성 하기"
 date:   2023-12-01 07:30:00 +0900
 categories: psyoblade created
 
