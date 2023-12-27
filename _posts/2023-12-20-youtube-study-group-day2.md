@@ -3,7 +3,6 @@ layout: post
 title:  "마케팅: 바이럴 마케팅 학습"
 date:   2023-12-20 08:00:00 +0900
 categories: psyoblade created
-
 ---
 
 ## 마케팅: 바이럴 마케팅이란
