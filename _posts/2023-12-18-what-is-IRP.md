@@ -52,7 +52,7 @@ categories: psyoblade created
   * 회사를 다니지 않더라도, 다니더라도 세제혜택을 받을 수 있으므로 잘 활용하면 좋다
 
 * 연금계좌 연간 납입한도
-  * ![images](images/irp_1.png)
+  * ![images](/images/irp_1.png)
   * 최대 900만원 채우면 좋지만, IRP 900만원 보다는 **연금 600먼저 채우고 IRP 300 채우는 것이 효과적**이다
     * 수령 시에는 연금저축 계좌가 유리한 부분이 있으므로 연금을 우선시 하자
 
@@ -63,7 +63,7 @@ categories: psyoblade created
 
 * 증권사 IRP 경우도 CMA 도 3%는 주지만 예금, 채권 등으로 투자해야 한다
 * 은행, 보험, 증권사 모두 활용할 수 있지만, 증권사가 아니면 ETF, 리츠,  채권 투자가 불가능하므로 증권사 추천
-  * ![image](images/irp_2.png)
+  * ![image](/images/irp_2.png)
 * 다만, 안정적인 노후자산 운용 취지인지 모르지만 큰 투자자산의 경우 최대 70%로 투자 비중이 제한되어 있습니다
   * **최소 30% 이상은 예금, 국고채 혹은 ELB 등의 원금보장에 준하는 안전자산에 투자**해야만 합니다
   * 단, TDF 펀드만으로 자산을 운용하거나 디폴트 옵션을 선택한 경우 별도로 고려할 필요는 없습니다
@@ -90,14 +90,14 @@ categories: psyoblade created
 
 * [금융감독원](https://www.fss.or.kr/fss/main/main.do?menuNo=200000) - 연금상품비교공시 - 퇴직연금비교공시 - [맞춤형 수수료](https://www.fss.or.kr/fss/lifeplan/fixesCmpr/list.do?menuNo=200967) 에서 확인이 가능합니다
   * 수수료율
-  * ![image](images/irp_3.png)
+  * ![image](/images/irp_3.png)
     * 삼성증권 0%, 미래에셋 0.24% - 계좌 잔고에서 빼나간다 다만 수익률의 차이가 나므로 너무 수수료만 볼 필요는 없을 것 같다
 
 ### IRP계좌 개설 & 변경
 
 * 여러개 할 수 있지만 관리 차원에서 한 군데에만 하는 것이 좋다
   * 변경
-    * ![images](images/irp_4.png)
+    * ![images](/images/irp_4.png)
   * 신규
     * 55세가 넘어 **연금수령 개시를 하게되면 IRP 계좌에서 연금저축계좌로 자금을 이전하는 것이 가능**합니다
       * 그리고 같은 금융사에서 다시 개설이 가능합니다
@@ -105,7 +105,7 @@ categories: psyoblade created
 ### IRP계좌의 수령
 
 * 보험사는 보험계약, 증권사는 신탁계약
-  * ![images](images/irp_5.png)
+  * ![images](/images/irp_5.png)
     * 특히 **증권사의 신탁계약은 연금 수령 중에도 IRP 계좌 내에서 자금 운용이 가능**합니다
     * 필요에 따라서 **연금 받기 전에 증권사에서 보험사로 이동하는 것도 가능**합니다
 
