@@ -1,7 +1,7 @@
 ---
 layout: post mortem
 title:  "회고: 포스트모템, 부검(剖檢)"
-date:   2023-12-31 00:00:00 +0900
+date:   2023-03-11 00:00:00 +0900
 categories: psyoblade created
 ---
 
