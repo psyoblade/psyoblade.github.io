@@ -17,7 +17,7 @@ categories: psyoblade created
 
 ### 분석 및 개선 방향
 
-![오리진](images/image1.png)
+![오리진](/private/images/image1.png)
 
 * 분석
 
