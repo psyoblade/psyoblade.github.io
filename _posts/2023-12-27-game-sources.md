@@ -57,7 +57,7 @@ categories: psyoblade created
   * [리뷰/출시](https://www.thisisgame.com/webzine/game/nboard/16/) 채널에서 최근 소식을 얻을 수 있으며, 다양한 장르의 정보를 얻을 수 있음
   * [커뮤니티](https://www.thisisgame.com/webzine/community/tboard/?board=32) 채널이 존재하지만 단순 게시판이라 이용자 정보는 크게 없는 단방향 정보 전달 채널
 * [인벤](https://www.inven.co.kr/)
-  * [플래폼 - PS](https://www.inven.co.kr/webzine/platform/?nplatform=3) 와 같이 플랫폼별 소식이 있으나 메뉴가 마우스 오버라서 접근성이 떨어짐
+  * [플랫폼 - PS](https://www.inven.co.kr/webzine/platform/?nplatform=3) 와 같이 플랫폼별 소식이 있으나 메뉴가 마우스 오버라서 접근성이 떨어짐
   * [리뷰](https://www.inven.co.kr/webzine/news/?sclass=12&platform=gamereview) 채널에서 점수를 시각적으로 잘 표현해서 한 눈에 들어오지만 리뷰가 일 주일에 하나 정도
   * [2023 인벤 게임 어워드](https://awards.inven.co.kr/) 같은 별도 페이지는 깔끔하게 잘 구성되어 한 번 볼만할 듯
 * [게임메카](https://www.gamemeca.com/)
