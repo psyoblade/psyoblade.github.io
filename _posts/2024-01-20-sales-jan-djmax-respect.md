@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "루틴: 2024-01-20 (토)"
+title:  "01/20 (토) 1월 할인게임 디제이맥스 리스펙트 외 3건"
 date:   2024-01-20 10:30:00 +0900
 categories: psyoblade created
 ---
