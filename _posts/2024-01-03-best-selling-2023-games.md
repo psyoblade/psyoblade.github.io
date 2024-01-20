@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "루틴: 2024-01-03 (수)"
+title:  "01/03 (수) 2023년 밀리언 셀러 히트작 목록"
 date:   2024-01-03 05:00:00 +0900
 categories: psyoblade created
 ---

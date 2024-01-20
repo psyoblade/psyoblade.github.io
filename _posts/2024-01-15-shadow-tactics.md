@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "루틴: 2024-01-15 (월)"
+title:  "01/15 (월) 섀도 택틱스: 블레이드 오브 더 쇼군"
 date:   2024-01-15 22:00:00 +0900
 categories: psyoblade created
 ---

@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "루틴: 2024-01-09 (화)"
+title:  "01/09 (화) '컬트 오브 더 램' 소개"
 date:   2024-01-09 05:42:00 +0900
 categories: psyoblade created
 ---
+
+
 
 ## 루틴: 2024년 1월 9일 (화)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "루틴: 2024-01-16 (화)"
+title:  "01/16 (화) '플랫포머' 게임을 알아보자"
 date:   2024-01-16 05:11:00 +0900
 categories: psyoblade created
 ---

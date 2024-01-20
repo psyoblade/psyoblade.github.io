@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "정보: 2023년 12월 새벽 루틴"
+title:  "2023/12/28 내가 구독하는 채널에 대한 분석"
 date:   2023-12-28 05:34:00 +0900
 categories: psyoblade created
 ---

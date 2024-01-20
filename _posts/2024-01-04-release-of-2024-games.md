@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "루틴: 2024-01-04 (목)"
+title:  "01/04 (목) '2024년 1분기' 출시예정 게임 리뷰"
 date:   2024-01-04 05:00:00 +0900
 categories: psyoblade created
 ---
+
+
 
 ## 루틴: 2024년 1월 4일 (목)
 

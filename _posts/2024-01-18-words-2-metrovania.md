@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "루틴: 2024-01-18 (목)"
+title:  "01/18 (목) 게임용어 2탄 '메트로배니아' 게임"
 date:   2024-01-18 05:16:00 +0900
 categories: psyoblade created
-
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "루틴: 2024-01-17 (수)"
+title:  "01/17 (수) '게임호프'님 '현직 매장 사장님들이 말하는 플스가 닌텐도를 이길 수 없는 이유' 리뷰"
 date:   2024-01-17 05:10:00 +0900
 categories: psyoblade created
 ---

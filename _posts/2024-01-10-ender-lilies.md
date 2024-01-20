@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "루틴: 2024-01-10 (수)"
+title:  "01/10 (수) '엔더 릴리즈' 소개 영상"
 date:   2024-01-10 05:00:00 +0900
 categories: psyoblade created
 ---
+
+
 
 ## 루틴: 2024년 1월 10일 (수)
 
