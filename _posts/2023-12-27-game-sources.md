@@ -54,8 +54,10 @@ categories: psyoblade created
 * [게임 제너레이션](https://www.gamegeneration.or.kr/) - [Main Theme](https://www.gamegeneration.or.kr/maintheme) 다양한 정보를 다루지는 않으나 깔끔하게 정리되어 **지식 획득**에 좋을 듯
 * [네이버 게임](https://game.naver.com) - LoL, PUBG, [발로란트](https://game.naver.com/esports/Valorant/board) 및 [일반](https://game.naver.com/esports/general/home) 채널에 **잘 정리된 기사와 최근 소식** 습득
 * [디스이즈게임](https://www.thisisgame.com/)
+  * [연재/카툰 - 연재 - 게임업체리포트](https://www.thisisgame.com/webzine/series/nboard/212/?series=186) 업체별 **매출 및 이익 분석 등의 리포트**를 볼 수 있는 꿀 채널
   * [리뷰/출시](https://www.thisisgame.com/webzine/game/nboard/16/) 채널에서 최근 소식을 얻을 수 있으며, 다양한 장르의 정보를 얻을 수 있음
   * [커뮤니티](https://www.thisisgame.com/webzine/community/tboard/?board=32) 채널이 존재하지만 단순 게시판이라 이용자 정보는 크게 없는 단방향 정보 전달 채널
+  
 * [인벤](https://www.inven.co.kr/)
   * [플랫폼 - PS](https://www.inven.co.kr/webzine/platform/?nplatform=3) 와 같이 플랫폼별 소식이 있으나 메뉴가 마우스 오버라서 접근성이 떨어짐
   * [리뷰](https://www.inven.co.kr/webzine/news/?sclass=12&platform=gamereview) 채널에서 점수를 시각적으로 잘 표현해서 한 눈에 들어오지만 리뷰가 일 주일에 하나 정도
