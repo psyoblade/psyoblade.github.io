@@ -197,17 +197,6 @@ categories: psyoblade created
 * 게임 용어 숏폼 2개 만들기 - 로그라이크 외 1개
 
   * [로그라이크](https://namu.wiki/w/%EB%A1%9C%EA%B7%B8%EB%9D%BC%EC%9D%B4%ED%81%AC)
-
-  * [로그라이트](https://namu.wiki/w/%EB%A1%9C%EA%B7%B8%EB%9D%BC%EC%9D%B4%ED%8A%B8)
-
-  * [서브컬처](https://namu.wiki/w/%EC%84%9C%EB%B8%8C%EC%BB%AC%EC%B2%98)
-
-  * [리마스터](https://namu.wiki/w/%EB%A6%AC%EB%A7%88%EC%8A%A4%ED%84%B0)
-
-  * [리메이크](https://namu.wiki/w/%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC)
-
-  * [리부트](https://namu.wiki/w/%EB%A6%AC%EB%B6%80%ED%8A%B8)
-
 * 1월 할인게임 숏폼 1개
   * [배트맨 아캄 컬렉션](https://namu.wiki/w/%EB%B0%B0%ED%8A%B8%EB%A7%A8:%20%EC%95%84%EC%BA%84%20%EB%82%98%EC%9D%B4%ED%8A%B8)
     * 기본정보
