@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "01/25 (목) 소니가 이겼지만 졌다 ... 갓텐도"
+title:  "01/25 (목) 채널 수익화 모델 방향"
 date:   2024-01-25 21:43:00 +0900
 categories: psyoblade created
 ---
