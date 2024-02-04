@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "02/01 (월) 매니챗 연동 방법"
+title:  "02/01 (목) 매니챗 연동 방법"
 date:   2024-02-01 17:30:00 +0900
 categories: psyoblade created
 ---
-
-
 
 ## 루틴: 2024년 2월 1일 (목)
 
