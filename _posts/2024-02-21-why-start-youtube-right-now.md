@@ -86,6 +86,8 @@ categories: psyoblade created
   * [피, 땀, 픽셀 - 한빛미디어](https://www.yes24.com/Product/Goods/62926484)
   * [만화로 보는 비디오 게임의 역사 - 계단](https://www.yes24.com/Product/Goods/62162469)
   * [게임의 역사와 이해 - 홍릉과학출판사](https://www.yes24.com/Product/Goods/20355937)
+  * [이와타씨에게 묻다 - 닌텐도 부활의 아이콘](https://www.yes24.com/Product/Goods/101891742)
+  * [나의 오락실 이야기 - 나와 인생을 함께한 오락실 연대기](https://www.yes24.com/Product/Goods/117389713)
 * 절판 서적
   * [페르시아의 왕자 - 조던 메크너의 게임 개발일지](https://www.yes24.com/Product/Goods/11416409)
   * [게임의 시대 - 스티브 켄트](https://www.yes24.com/Product/Goods/318750)
