@@ -18,7 +18,6 @@ categories: psyoblade created
 #### 회고
 
 * 결국 책읽기와 글쓰기가 모든 창작활동의 기본이다
-* 
 
 ### AI로 유튜브 운영하기
 
