@@ -13,7 +13,7 @@ categories: psyoblade created
 
 #### 1.1 사례
 
-* 개요
+* 비전보드 리모델링
   * ![image-20240523221750775](/private/images/2024-05-26-yeoljung-day4/image-20240523221750775.png)
   * ![image-20240523221801532](/private/images/2024-05-26-yeoljung-day4/image-20240523221801532.png)
   * ![image-20240523221812851](/private/images/2024-05-26-yeoljung-day4/image-20240523221812851.png)
@@ -25,5 +25,6 @@ categories: psyoblade created
   * ![image-20240523221850185](/private/images/2024-05-26-yeoljung-day4/image-20240523221850185.png)
   * ![image-20240523221912046](/private/images/2024-05-26-yeoljung-day4/image-20240523221912046.png)
   * ![image-20240523221921786](/private/images/2024-05-26-yeoljung-day4/image-20240523221921786.png)
-  * 
+
+
 
