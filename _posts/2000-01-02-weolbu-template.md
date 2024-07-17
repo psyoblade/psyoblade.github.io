@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "05/00 (목) [월부열중반] "
-date:   2024-05-00 00:00:00 +0900
+title:  "06/00 (목) [월부서울투자반] "
+date:   2024-06-00 00:00:00 +0900
 categories: psyoblade created
 ---
 
