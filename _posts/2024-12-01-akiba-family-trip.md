@@ -27,14 +27,16 @@ categories: psyoblade created
 
 #### 1월 22일 (수)
 
-* 관람 장소 사전 예약
-* 차량 리콜, 세차 및 완충
+* [와이파이 도시락 예약](https://www.wifidosirak.com/)
 * [입국심사 및 패스트트랙 신청](https://services.digital.go.jp/ko/visit-japan-web/)
 
 #### 1월 23일 (목)
 
+* 차량 세차 및 충전
+* 금전 계획 작성 및 환전 (신한 트래블 카드, 트래블 월렛)
+* 아키하바라 역주변 세븐 뱅크 ATM 위치
 * [스이카 카드 찾아둘 것](https://www.jreast.co.jp/multi/ko/pass/suica.html)
-* [와이파이 도시락 신청](https://www.wifidosirak.com/v3/index.aspx) (1/24 ~ 2/1)
+* [여행자보험 신청](https://www.klook.com/ko/insurance/klook-protect/products/detail/10-travelcare-for-korean-residents-only/)
 * 사고 싶은 게임 목록 일본어로 출력
 
 #### 1월 24일 (금) 오전
