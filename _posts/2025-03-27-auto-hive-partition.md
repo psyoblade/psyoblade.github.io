@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "03/27 (월) 템플릿"
+title:  "03/27 (월) 동적으로 하이브 테이블 파티션 추가 프로그램 설계"
 date:   2025-03-27 21:34:00 +0900
 categories: psyoblade created
 ---
@@ -82,3 +82,4 @@ categories: psyoblade created
 * 이미 수행한 하이브 파티션 작업에 대한 조치는 다시 수행하더라도 문제가 없도록 `if not exists` 구문을 넣어 방어한다
   * 단, min 파티션과 hour 파티션은 복구 순서가 겹치면 문제가 될 수 있다
   * min 파티션 복구를 수행하고 
+
