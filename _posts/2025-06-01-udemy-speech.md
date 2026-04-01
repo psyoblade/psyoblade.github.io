@@ -17,7 +17,7 @@ categories: psyoblade created
   * 탤런트 뱅크, 크몽
   * 2027년 미국인의 50.9% 가 '긱 워커'가 될 것
 
-* ![image-20250601134625210](images/2025-06-01-udemy-speech/image-20250601134625210.png)
+* ![image-20250601134625210](/private/images/2025-06-01-udemy-speech/image-20250601134625210.png)
 
 ### 2 내가 가진 모든 이야기가 강의 주제가 될 수 있다
 
@@ -101,10 +101,10 @@ categories: psyoblade created
 
 * 강사로 등록하고 브랜딩을 위해서는 강사 프로필을 만들어아 한다 
 
-  * ![image-20250601152907381](images/2025-06-01-udemy-speech/image-20250601152907381.png)
+  * ![image-20250601152907381](/private/images/2025-06-01-udemy-speech/image-20250601152907381.png)
 
   * 온라인 컨텐츠에 대한 소개도 있으면 추가하면 좋다
-    * ![image-20250601174008464](images/2025-06-01-udemy-speech/image-20250601174008464.png)
+    * ![image-20250601174008464](/private/images/2025-06-01-udemy-speech/image-20250601174008464.png)
 
 * 가장 중요한 것은 사진이다
 
@@ -132,15 +132,15 @@ categories: psyoblade created
 ### 7. ADDIE 기법을 활용한 강의 개요 구성하기
 
 * ADDIE 기법을 활용한 강의개요
-  * ![image-20250601174026720](images/2025-06-01-udemy-speech/image-20250601174026720.png)
-  * ![image-20250601174045360](images/2025-06-01-udemy-speech/image-20250601174045360.png)
+  * ![image-20250601174026720](/private/images/2025-06-01-udemy-speech/image-20250601174026720.png)
+  * ![image-20250601174045360](/private/images/2025-06-01-udemy-speech/image-20250601174045360.png)
 * 교수설계기법 ADDIE
   * A : analysis 분석 - 고객이 무엇을 원하는 지 분석
   * D : design 설계 - 전체적으로 어떻게 진행할 것인지 설계
   * D : develop 개발 - 실제 교육 내용을 개발하여
   * U : implement 적용 - 강의에 적용하고
   * E : evaluate 평가 - 강의 결과를 평가하고
-  * ![image-20250601174059659](images/2025-06-01-udemy-speech/image-20250601174059659.png)
+  * ![image-20250601174059659](/private/images/2025-06-01-udemy-speech/image-20250601174059659.png)
 
 #### 7.1 분석
 

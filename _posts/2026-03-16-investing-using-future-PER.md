@@ -36,13 +36,13 @@ categories: psyoblade created
 
 * [SK이터닉스](https://finance.naver.com/item/coinfo.naver?code=475150) 네이버 Finantial Summary 항목의 "연간" 탭을 선택하면 아래와 같이 확인할 수 있는데
 
-  * ![image-20260315235406001](images/2026-03-16-investing-using-future-PER/image-20260315235406001.png)
+  * ![image-20260315235406001](/private/images/2026-03-16-investing-using-future-PER/image-20260315235406001.png)
 
     * **IFRS = International Financial Reporting Standards (국제회계기준)** 에 의한 
     * **연결** : 모회사 + 자회사 실적 모두를 하나의 회사로 합산하여
     * **E = Estimate ** : 추정한 결과를 나타냅니다
 
-  * ![image-20260315235453829](images/2026-03-16-investing-using-future-PER/image-20260315235453829.png)
+  * ![image-20260315235453829](/private/images/2026-03-16-investing-using-future-PER/image-20260315235453829.png)
 
   * 증권기업 애널리스트들이 아래의 항목을 기반으로 예측 모델을 만들어 당기순이익을 추정한 결과가 **노란색으로 표기된 영역**입니다
 
@@ -51,7 +51,7 @@ categories: psyoblade created
     * 수주
     * 시장 전망
 
-  * ![image-20260315235529104](images/2026-03-16-investing-using-future-PER/image-20260315235529104.png)
+  * ![image-20260315235529104](/private/images/2026-03-16-investing-using-future-PER/image-20260315235529104.png)
 
     * 추정된 이익을 통해 아래의 공식을 통해 계산합니다
 
@@ -81,7 +81,7 @@ categories: psyoblade created
 
 ### 주요 미국 주식에 미래 PER 을 적용해보자
 
-* ![image-20260316002250504](images/2026-03-16-investing-using-future-PER/image-20260316002250504.png)
+* ![image-20260316002250504](/private/images/2026-03-16-investing-using-future-PER/image-20260316002250504.png)
 * FY = Fiscal Year 회계년도, **EPS (Earnings Per Share) 주당 순이익**, **YoY (Year over Year) 전년 대비 성장율**, PE (Price to Earnings) EPS 당 주가 즉 PER
   * 테슬라
     * 주당 순이익이 전년 대비 약 30% 증가 예상
