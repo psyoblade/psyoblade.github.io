@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "03/27 (월) 동적으로 하이브 테이블 파티션 추가 프로그램 설계"
+title:  "03/27 (월) 동적 하이브 파티션 추가 프로그램 설계"
 date:   2025-03-27 21:34:00 +0900
 categories: psyoblade created
 ---
