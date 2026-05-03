@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "05/03 (일) 안드레 카파시 클로드 가이드 & 글로벌 데이터 수집 아키텍처"
-date:   2026-01-01 05:00:00 +0900
+date:   2026-05-03 21:00:00 +0900
 categories: psyoblade created
 ---
 
