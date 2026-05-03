@@ -27,6 +27,13 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true  # gem 캐싱 — 재설치 없이 재사용
 
+      - name: Cache Jekyll
+        uses: actions/cache@v4
+        with:
+          path: .jekyll-cache
+          key: jekyll-${{ hashFiles('_config.yml') }}
+          restore-keys: jekyll-
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
