@@ -1,6 +1,10 @@
 # Custom .gitignore
 *.zip
 
+### Hugo ###
+public/
+.hugo_build.lock
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,git,gitbook,jekyll
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,git,gitbook,jekyll

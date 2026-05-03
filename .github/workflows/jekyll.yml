@@ -1,4 +1,4 @@
-name: Deploy Jekyll Blog
+name: Deploy Hugo Blog
 
 on:
   push:
@@ -20,31 +20,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2"
-          bundler-cache: true  # gem 캐싱 — 재설치 없이 재사용
+          submodules: true  # PaperMod 테마 submodule 포함
 
-      - name: Cache Jekyll
-        uses: actions/cache@v4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          path: .jekyll-cache
-          key: jekyll-${{ hashFiles('_config.yml') }}
-          restore-keys: jekyll-
+          hugo-version: "latest"
+          extended: true
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build Jekyll
-        run: bundle exec jekyll build --incremental --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+      - name: Build Hugo
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
 
   deploy:
     environment:

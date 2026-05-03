@@ -1,0 +1,36 @@
+baseURL = "https://psyoblade.github.io/"
+languageCode = "ko-KR"
+title = "psyOblade's github Blog"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+
+[markup.goldmark.renderer]
+  unsafe = true  # 포스트 내 HTML 태그 허용
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[params]
+  author = "psyoblade"
+  description = "최근에 깃헙을 통해 공부하고 있는 내용을 공유하고자 만든 블로그 입니다. 주요 관심사는 대용량 데이터 처리, 기계학습을 통해 보다 행복한 개발자의 환경을 만드는 것입니다."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "psyOblade's github Blog"
+  Content = "대용량 데이터 처리, 기계학습, 개발 이야기를 공유합니다."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/psyoblade"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
